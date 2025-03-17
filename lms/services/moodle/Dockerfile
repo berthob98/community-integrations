@@ -19,24 +19,24 @@ RUN git clone https://github.com/Opencast-Moodle/moodle-repository_opencast.git 
  && git checkout "$MOODLE_REPOSITORY_OPENCAST"
 
 ARG MOODLE_FILTER_OPENCAST=master
-RUN git clone https://github.com/Opencast-Moodle/moodle-filter_opencast.git /var/www/html/filter/opencast \
+RUN git clone https://github.com/berthob98/moodle-filter_opencast.git /var/www/html/filter/opencast \
  && cd /var/www/html/filter/opencast \
- && git checkout "$MOODLE_FILTER_OPENCAST"
+ && git switch r11111_MOD_move_block_settings
 
 ARG MOODLE_TOOL_OPENCAST=master
-RUN git clone https://github.com/Opencast-Moodle/moodle-tool_opencast.git /var/www/html/admin/tool/opencast \
+RUN git clone https://github.com/berthob98/moodle-tool_opencast.git /var/www/html/admin/tool/opencast \
  && cd /var/www/html/admin/tool/opencast \
- && git checkout "$MOODLE_TOOL_OPENCAST"
+ && git switch move_block_opencast
 
 ARG MOODLE_MOD_OPENCAST=master
-RUN git clone https://github.com/Opencast-Moodle/moodle-mod_opencast.git /var/www/html/mod/opencast \
+RUN git clone https://github.com/berthob98/moodle-mod_opencast.git /var/www/html/mod/opencast \
  && cd /var/www/html/mod/opencast \
- && git checkout "$MOODLE_MOD_OPENCAST"
+ && git switch r11111_MOD_move_block_settings
 
 ARG MOODLE_BLOCK_OPENCAST=master
-RUN git clone https://github.com/Opencast-Moodle/moodle-block_opencast.git /var/www/html/blocks/opencast \
+RUN git clone https://github.com/berthob98/moodle-block_opencast.git /var/www/html/blocks/opencast \
  && cd /var/www/html/blocks/opencast \
- && git checkout "$MOODLE_BLOCK_OPENCAST"
+ && git switch move_block_opencast
 
 USER root
 

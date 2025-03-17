@@ -26,16 +26,16 @@ set_config('download_default_1', 1,               'mod_opencast');
 
 cli_writeln('Settings for block_opencast');
 
-set_config('limituploadjobs_1',                  10,                                 'block_opencast');
-set_config('uploadworkflow_1',                   'schedule-and-upload',              'block_opencast');
-set_config('publishtoengage_1',                  1,                                  'block_opencast');
-set_config('ingestupload_1',                     0,                                  'block_opencast');
-set_config('deleteworkflow_1',                   'delete',                           'block_opencast');
-set_config('uploadfileextensions_1',             '.aac,.aiff,.flac,.m4a,.mp3,.oga,.ogg,.wav,video,.3gp,.f4v,.flv,.fmp4,.m4v,.mov,.mp4,.mpeg,.mpg,.ogv,.qt,.ts,.webm', 'block_opencast');
-set_config('batchuploadenabled_1',               1,                                  'block_opencast');
-set_config('group_creation_1',                   0,                                  'block_opencast');
-set_config('series_name_1',                      '[COURSENAME]',                     'block_opencast');
-set_config('workflow_roles_1',                   'republish-metadata',               'block_opencast');
+set_config('limituploadjobs_1',                  10,                                 'tool_opencast');
+set_config('uploadworkflow_1',                   'schedule-and-upload',              'tool_opencast');
+set_config('publishtoengage_1',                  1,                                  'tool_opencast');
+set_config('ingestupload_1',                     0,                                  'tool_opencast');
+set_config('deleteworkflow_1',                   'delete',                           'tool_opencast');
+set_config('uploadfileextensions_1',             '.aac,.aiff,.flac,.m4a,.mp3,.oga,.ogg,.wav,video,.3gp,.f4v,.flv,.fmp4,.m4v,.mov,.mp4,.mpeg,.mpg,.ogv,.qt,.ts,.webm', 'tool_opencast');
+set_config('batchuploadenabled_1',               1,                                  'tool_opencast');
+set_config('group_creation_1',                   0,                                  'tool_opencast');
+set_config('series_name_1',                      '[COURSENAME]',                     'tool_opencast');
+set_config('workflow_roles_1',                   'republish-metadata',               'tool_opencast');
 set_config('roles_1',                            '[{ "rolename":  "ROLE_ADMIN",
                                                      "actions":   "read,write",
                                                      "permanent": 1 },
@@ -47,50 +47,50 @@ set_config('roles_1',                            '[{ "rolename":  "ROLE_ADMIN",
                                                      "permanent": 1 },
                                                    { "rolename":  "ROLE_USER_[USERNAME]",
                                                      "actions":   "read,write",
-                                                     "permanent": 1 }]',             'block_opencast');
-set_config('aclownerrole_1',                     'ROLE_OWNER_[USERNAME]',            'block_opencast');
-set_config('showpublicationchannels_1',          0,                                  'block_opencast');
-set_config('showenddate_1',                      1,                                  'block_opencast');
-set_config('showlocation_1',                     1,                                  'block_opencast');
-set_config('enablechunkupload_1',                1,                                  'block_opencast');
-set_config('uploadfilelimit_1',                  5368709120,                         'block_opencast');
-set_config('offerchunkuploadalternative_1',      0,                                  'block_opencast');
-set_config('enable_opencast_studio_link_1',      1,                                  'block_opencast');
-set_config('open_studio_in_new_tab_1',           1,                                  'block_opencast');
-set_config('opencast_studio_baseurl_1',          'http://opencast.localtest.me',     'block_opencast');
-set_config('show_opencast_studio_return_btn_1',  1,                                  'block_opencast');
-set_config('enable_opencast_editor_link_1',      1,                                  'block_opencast');
-set_config('editorbaseurl_1',                    'http://opencast.localtest.me',     'block_opencast');
-set_config('editorendpointurl_1',                '/editor-ui/index.html?id=',        'block_opencast');
-set_config('eventstatusnotificationenabled_1',   1,                                  'block_opencast');
-set_config('eventstatusnotificationdeletion_1',  2,                                  'block_opencast');
-set_config('aclcontrol_1',                       0,                                  'block_opencast');
-set_config('aclcontrolafter_1',                  0,                                  'block_opencast');
-set_config('aclcontrolgroup_1',                  0,                                  'block_opencast');
-set_config('addactivityenabled_1',               1,                                  'block_opencast');
-set_config('addactivityintro_1',                 1,                                  'block_opencast');
-set_config('addactivitysection_1',               1,                                  'block_opencast');
-set_config('addactivityavailability_1',          1,                                  'block_opencast');
-set_config('addactivityepisodeenabled_1',        1,                                  'block_opencast');
-set_config('addactivityepisodeintro_1',          1,                                  'block_opencast');
-set_config('addactivityepisodesection_1',        1,                                  'block_opencast');
-set_config('addactivityepisodeavailability_1',   1,                                  'block_opencast');
+                                                     "permanent": 1 }]',             'tool_opencast');
+set_config('aclownerrole_1',                     'ROLE_OWNER_[USERNAME]',            'tool_opencast');
+set_config('showpublicationchannels_1',          0,                                  'tool_opencast');
+set_config('showenddate_1',                      1,                                  'tool_opencast');
+set_config('showlocation_1',                     1,                                  'tool_opencast');
+set_config('enablechunkupload_1',                1,                                  'tool_opencast');
+set_config('uploadfilelimit_1',                  5368709120,                         'tool_opencast');
+set_config('offerchunkuploadalternative_1',      0,                                  'tool_opencast');
+set_config('enable_opencast_studio_link_1',      1,                                  'tool_opencast');
+set_config('open_studio_in_new_tab_1',           1,                                  'tool_opencast');
+set_config('opencast_studio_baseurl_1',          'http://opencast.localtest.me',     'tool_opencast');
+set_config('show_opencast_studio_return_btn_1',  1,                                  'tool_opencast');
+set_config('enable_opencast_editor_link_1',      1,                                  'tool_opencast');
+set_config('editorbaseurl_1',                    'http://opencast.localtest.me',     'tool_opencast');
+set_config('editorendpointurl_1',                '/editor-ui/index.html?id=',        'tool_opencast');
+set_config('eventstatusnotificationenabled_1',   1,                                  'tool_opencast');
+set_config('eventstatusnotificationdeletion_1',  2,                                  'tool_opencast');
+set_config('aclcontrol_1',                       0,                                  'tool_opencast');
+set_config('aclcontrolafter_1',                  0,                                  'tool_opencast');
+set_config('aclcontrolgroup_1',                  0,                                  'tool_opencast');
+set_config('addactivityenabled_1',               1,                                  'tool_opencast');
+set_config('addactivityintro_1',                 1,                                  'tool_opencast');
+set_config('addactivitysection_1',               1,                                  'tool_opencast');
+set_config('addactivityavailability_1',          1,                                  'tool_opencast');
+set_config('addactivityepisodeenabled_1',        1,                                  'tool_opencast');
+set_config('addactivityepisodeintro_1',          1,                                  'tool_opencast');
+set_config('addactivityepisodesection_1',        1,                                  'tool_opencast');
+set_config('addactivityepisodeavailability_1',   1,                                  'tool_opencast');
 # TODO: Transcriptions
-set_config('liveupdateenabled_1',                1,                                  'block_opencast');
-set_config('download_channel_1',                 'engage-player',                    'block_opencast');
+set_config('liveupdateenabled_1',                1,                                  'tool_opencast');
+set_config('download_channel_1',                 'engage-player',                    'tool_opencast');
 # TODO: direct_access_channel_1?
-set_config('workflow_tag_1',                     'archive',                          'block_opencast');
-set_config('support_email_1',                    'admin@moodle.localtest.me',        'block_opencast');
-set_config('termsofuse_1',                       '<p><strong>Be Nice!</strong></p>', 'block_opencast');
-set_config('addltienabled_1',                    0,                                  'block_opencast');
-set_config('addltiepisodeenabled_1',             0,                                  'block_opencast');
-set_config('importvideosenabled_1',              1,                                  'block_opencast');
-set_config('importmode_1',                       'acl',                              'block_opencast');
-set_config('importvideoscoreenabled_1',          1,                                  'block_opencast');
-set_config('importvideoscoredefaultvalue_1',     'Checked',                          'block_opencast');
-set_config('importvideosmanualenabled_1',        1,                                  'block_opencast');
-set_config('importvideoshandleseriesenabled_1',  0,                                  'block_opencast');
-set_config('importvideoshandleepisodeenabled_1', 0,                                  'block_opencast');
+set_config('workflow_tag_1',                     'archive',                          'tool_opencast');
+set_config('support_email_1',                    'admin@moodle.localtest.me',        'tool_opencast');
+set_config('termsofuse_1',                       '<p><strong>Be Nice!</strong></p>', 'tool_opencast');
+set_config('addltienabled_1',                    0,                                  'tool_opencast');
+set_config('addltiepisodeenabled_1',             0,                                  'tool_opencast');
+set_config('importvideosenabled_1',              1,                                  'tool_opencast');
+set_config('importmode_1',                       'acl',                              'tool_opencast');
+set_config('importvideoscoreenabled_1',          1,                                  'tool_opencast');
+set_config('importvideoscoredefaultvalue_1',     'Checked',                          'tool_opencast');
+set_config('importvideosmanualenabled_1',        1,                                  'tool_opencast');
+set_config('importvideoshandleseriesenabled_1',  0,                                  'tool_opencast');
+set_config('importvideoshandleepisodeenabled_1', 0,                                  'tool_opencast');
 
 
 
