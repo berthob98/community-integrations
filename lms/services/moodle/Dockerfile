@@ -26,7 +26,7 @@ RUN git clone https://github.com/berthob98/moodle-filter_opencast.git /var/www/h
 ARG MOODLE_TOOL_OPENCAST=master
 RUN git clone https://github.com/berthob98/moodle-tool_opencast.git /var/www/html/admin/tool/opencast \
  && cd /var/www/html/admin/tool/opencast \
- && git switch move_block_opencast
+ && git switch develop_backup_restore
 
 ARG MOODLE_MOD_OPENCAST=master
 RUN git clone https://github.com/berthob98/moodle-mod_opencast.git /var/www/html/mod/opencast \
@@ -36,7 +36,7 @@ RUN git clone https://github.com/berthob98/moodle-mod_opencast.git /var/www/html
 ARG MOODLE_BLOCK_OPENCAST=master
 RUN git clone https://github.com/berthob98/moodle-block_opencast.git /var/www/html/blocks/opencast \
  && cd /var/www/html/blocks/opencast \
- && git switch move_block_opencast
+ && git switch develop_backup_restore
 
 USER root
 
